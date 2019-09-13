@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corretorortografico.FXMLDocumentController">
+    <children>
+      <TextArea id="text" fx:id="text" layoutX="26.0" layoutY="82.0" prefHeight="473.0" prefWidth="1079.0" />
+      <Pane id="HeaderMenu" fx:id="headermenu" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="1118.0" style="-fx-background-color: #1e90ff;">
+         <children>
+            <Button layoutX="215.0" layoutY="12.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="buttontop" stylesheets="@css/style.css" text="Home" />
+            <MenuButton contentDisplay="TOP" layoutX="386.0" layoutY="12.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="buttontopmenu" stylesheets="@css/style.css" text="Linguagem" textFill="WHITE">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Portugues" />
+               </items>
+            </MenuButton>
+         </children>
+      </Pane>
+      <Button id="handleMenuLimpar" fx:id="handleMenuLimpar" layoutX="484.0" layoutY="575.0" onAction="#handleMenuLimpar" prefHeight="37.0" prefWidth="164.0" styleClass="buttonred" stylesheets="@css/style.css" text="Limpar Tudo" />
+    </children>
+</AnchorPane>
